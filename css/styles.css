@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+.bg-index {
+  background-color: rgb(64, 0, 25);
+}
+
+.cont-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.4rem;
+}
+
+.cont-main h1 {
+  color: #f6f6f6db;
+  font-size: 3rem;
+}
+
+.cont-main p {
+  color: #f6f6f6db;
+}
+
+.row-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 800px;
+  gap: 10px;
+  margin-left: 5rem;
+}
+
+.row-input button {
+  font-weight: 600;
+  margin-top: 10px;
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 6px;
+  border-style: none;
+}
+
+.row-input input {
+  display: flex;
+  color: white;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  width: 400px;
+  height: 34px;
+  background-color: rgba(69, 37, 63, 0.272);
+  border: solid 2px #0000006d;
+  border-radius: 6px;
+  padding: 0.6rem;
+  outline: none;
+}
+
+.row-input input:focus {
+  border: solid 2px #ffffff;
+}
+
+.cont-tareas {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 1000px;
+  height: 700px;
+  border: solid 2px;
+  padding: 1.2rem;
+  gap: 5px;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+/* Personalización de la barra de desplazamiento */
+.cont-tareas::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+.cont-tareas::-webkit-scrollbar-thumb {
+  background-color: #8b0023; /* Color del pulgar (parte que se mueve) */
+  border-radius: 6px; /* Bordes redondeados del pulgar */
+  border: 2px solid #000000; /* Borde alrededor del pulgar */
+}
+
+.cont-tareas::-webkit-scrollbar-track {
+  background-color: #00000052;
+  border-radius: 6px;
+}
+
+.cont-tareas ul {
+  color: rgb(236, 236, 236);
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.2rem;
+  border: solid 2px #000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.cont-tareas .btnBorrar {
+  font-weight: 500;
+  border-style: none;
+  background-color: rgb(224, 224, 224);
+  font-size: 1.2rem;
+  width: 74px;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cont-tareas .btnCompletado {
+  font-weight: 500;
+  border-style: none;
+  background-color: rgb(224, 224, 224);
+  font-size: 1.2rem;
+  width: 180px;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cont-tareas .completado {
+  background-color: rgb(0, 227, 0);
+}
+
+.tarea-completada .texto-tarea {
+  text-decoration: line-through;
+  text-decoration-thickness: 4px; /* Grosor del tachado */
+  text-decoration-color: rgb(0, 0, 0); /* Color del tachado */
+  color: rgb(146, 146, 146);
+}
+
+.cont-tareas .no-completado {
+  background-color: red;
+}
+
+.errorMSG {
+  color: red;
+}
