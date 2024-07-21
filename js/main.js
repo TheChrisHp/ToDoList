@@ -8,6 +8,9 @@ let container = document.querySelector(".cont-tareas");
 //tarea INPUT
 let tarea = document.getElementById("tarea");
 
+//Agrego efecto de sonido
+let sound = new Audio("/resources/sound.mp3");
+
 let addToDo = () => {
   let agregoAlArray = {
     id: contador++,
@@ -26,6 +29,8 @@ let addToDo = () => {
   todoArray.push(agregoAlArray);
   console.log(todoArray);
   tarea.value = "";
+  sound.volume = 0.2;
+  sound.play();
   renderizarTareas();
 };
 
