@@ -7,7 +7,10 @@
 }
 
 .bg-index {
-  background-color: rgb(64, 0, 25);
+  background-color: #ffc3a1;
+  opacity: 1;
+  background-image: radial-gradient(#000000 1.4000000000000001px, #ffc3a1 1.4000000000000001px);
+  background-size: 28px 28px;
 }
 
 .cont-main {
@@ -19,12 +22,14 @@
 }
 
 .cont-main h1 {
-  color: #f6f6f6db;
-  font-size: 3rem;
+  color: #191919db;
+  font-size: 3.2rem;
+  text-shadow: 3px 2px 2px #555555;
 }
 
 .cont-main p {
-  color: #f6f6f6db;
+  font-weight: 600;
+  color: #191919db;
 }
 
 .row-input {
@@ -45,6 +50,7 @@
   cursor: pointer;
   border-radius: 6px;
   border-style: none;
+  border: solid 1px #000;
 }
 
 .row-input input {
@@ -62,10 +68,11 @@
 }
 
 .row-input input:focus {
-  border: solid 2px #ffffff;
+  border: solid 2px #191919db;
 }
 
 .cont-tareas {
+  background-color: wheat;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -74,9 +81,10 @@
   height: 700px;
   border: solid 2px;
   padding: 1.2rem;
-  gap: 5px;
+  gap: 10px;
   border-radius: 12px;
   overflow: auto;
+  box-shadow: -14px 16px 1px #000;
 }
 
 /* Personalización de la barra de desplazamiento */
@@ -96,6 +104,7 @@
 }
 
 .cont-tareas ul {
+  background-color: #4406b6;
   color: rgb(236, 236, 236);
   font-size: 1.8rem;
   font-weight: 500;
@@ -106,6 +115,7 @@
   align-items: center;
   justify-content: space-between;
   vertical-align: middle;
+  box-shadow: -6px 6px 1px #000;
 }
 
 .cont-tareas .btnBorrar {
@@ -117,6 +127,7 @@
   height: 35px;
   border-radius: 6px;
   cursor: pointer;
+  box-shadow: 4px 4px 1px #000;
 }
 
 .cont-tareas .btnCompletado {
@@ -128,10 +139,13 @@
   height: 35px;
   border-radius: 6px;
   cursor: pointer;
+  border: solid 1px #000;
 }
 
 .cont-tareas .completado {
   background-color: rgb(0, 227, 0);
+  border: solid 2px #000;
+  box-shadow: 4px 4px 1px #000;
 }
 
 .tarea-completada .texto-tarea {
@@ -143,6 +157,8 @@
 
 .cont-tareas .no-completado {
   background-color: red;
+  border: solid 2px #000;
+  box-shadow: 4px 4px 1px #000;
 }
 
 .errorMSG {
